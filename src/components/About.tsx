@@ -78,11 +78,15 @@ const About = () => {
           </div>
           
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" variant="default">
-              Download CV
+            <Button size="lg" variant="default" asChild>
+              <a href="/CV Elvin CHA eng.pdf" download="CV Elvin CHA eng.pdf">
+                Download CV
+              </a>
             </Button>
-            <Button size="lg" variant="outline">
-              Contact Me
+            <Button size="lg" variant="outline" asChild>
+              <a href="#contact">
+                Contact Me
+              </a>
             </Button>
           </div>
         </div>

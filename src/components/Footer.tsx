@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <a href="#" className="text-xl font-display font-semibold tracking-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">
-                John.Doe
+                Elvin.CHA
               </span>
             </a>
             <p className="text-muted-foreground mt-2 text-sm">
@@ -42,7 +42,7 @@ const Footer = () => {
         
         <div className="border-t border-border/40 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} John Doe. All rights reserved.
+            © {currentYear} Elvin CHA. All rights reserved.
           </p>
           
           <div className="mt-4 md:mt-0 flex flex-wrap gap-4 text-sm text-muted-foreground">

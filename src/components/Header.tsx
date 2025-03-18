@@ -50,7 +50,7 @@ const Header = () => {
         <div className="flex items-center">
           <a href="#" className="text-xl md:text-2xl font-display font-semibold tracking-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">
-              John.Doe
+              Elvin.CHA
             </span>
           </a>
         </div>
@@ -74,7 +74,7 @@ const Header = () => {
             size="sm"
             asChild
           >
-            <a href="/resume.pdf" download="elvin-cha-resume-eng.pdf" className="flex items-center justify-center gap-2">
+            <a href="/CV Elvin CHA eng.pdf" download="CV Elvin CHA eng.pdf" className="flex items-center justify-center gap-2">
               <FileText className="h-4 w-4" />
               Resume
             </a>
@@ -113,7 +113,7 @@ const Header = () => {
               variant="default"
               asChild
             >
-              <a href="/CV Elvin CHA eng.pdf" download className="flex items-center justify-center gap-2">
+              <a href="/CV Elvin CHA eng.pdf" download="CV Elvin CHA eng.pdf" className="flex items-center justify-center gap-2">
                 <FileText className="h-4 w-4" />
                 Resume
               </a>

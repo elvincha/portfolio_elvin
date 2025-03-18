@@ -65,14 +65,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "john.doe@example.com",
-      link: "mailto:john.doe@example.com",
+      value: "elvin.cha08@gmail.com",
+      link: "mailto:elvin.cha08@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+33 6 31 01 81 64",
+      link: "tel:+33631018164",
     },
     {
       icon: MapPin,
