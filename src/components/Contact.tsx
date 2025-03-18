@@ -104,17 +104,17 @@ const Contact = () => {
               <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
                 <info.icon className="h-5 w-5 text-primary" />
               </div>
-              <div className="min-w-0 flex-1"> {/* Added min-w-0 and flex-1 to allow text to shrink */}
+              <div>
                 <h3 className="text-sm font-medium mb-1">{info.title}</h3>
                 {info.link ? (
                   <a 
                     href={info.link} 
-                    className="text-muted-foreground hover:text-primary transition-colors break-all" {/* Added break-all */}
+                    className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     {info.value}
                   </a>
                 ) : (
-                  <p className="text-muted-foreground break-words">{info.value}</p>
+                  <p className="text-muted-foreground">{info.value}</p>
                 )}
               </div>
             </div>
