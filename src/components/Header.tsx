@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -72,8 +72,12 @@ const Header = () => {
             className="ml-4"
             variant="default"
             size="sm"
+            asChild
           >
-            Resume
+            <a href="/resume.pdf" download="john_doe_resume.pdf" className="flex items-center gap-2">
+              <FileText className="h-4 w-4" />
+              Resume
+            </a>
           </Button>
         </nav>
 
@@ -107,8 +111,12 @@ const Header = () => {
             <Button
               className="mt-4 w-full"
               variant="default"
+              asChild
             >
-              Resume
+              <a href="/resume.pdf" download="john_doe_resume.pdf" className="flex items-center justify-center gap-2">
+                <FileText className="h-4 w-4" />
+                Resume
+              </a>
             </Button>
           </nav>
         </div>
