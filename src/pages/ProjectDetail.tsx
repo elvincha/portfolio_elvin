@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
@@ -54,11 +53,13 @@ const ProjectDetail = () => {
                 />
               </div>
               
-              <div className="space-y-6">
-                <h2 className="text-2xl font-medium">Project Overview</h2>
-                <p className="text-muted-foreground">{project.description}</p>
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-2xl font-medium mb-4">Project Overview</h2>
+                  <p className="text-muted-foreground">{project.details?.overview || project.description}</p>
+                </div>
                 
-                <div className="py-4">
+                <div>
                   <h3 className="text-lg font-medium mb-3">Technologies Used</h3>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map(tag => (
@@ -69,20 +70,14 @@ const ProjectDetail = () => {
                   </div>
                 </div>
                 
-                <h2 className="text-2xl font-medium pt-4">Project Details</h2>
-                <p className="text-muted-foreground">
-                  This project demonstrates my expertise in {project.tags.join(', ')}. 
-                  It involved complex problem-solving and innovative approaches to deliver
-                  a comprehensive solution that addresses real-world challenges.
-                </p>
-                
-                <h2 className="text-2xl font-medium pt-4">Key Features</h2>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-                  <li>Advanced data processing techniques</li>
-                  <li>Interactive visualization of complex datasets</li>
-                  <li>Scalable architecture design</li>
-                  <li>Robust error handling and reporting</li>
-                </ul>
+                <div>
+                  <h2 className="text-2xl font-medium mb-4">Key Features</h2>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
+                    {project.details?.keyFeatures.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
             
@@ -113,10 +108,10 @@ const ProjectDetail = () => {
                 <div className="mt-8">
                   <h3 className="text-xl font-medium mb-4">Timeline</h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    <span className="font-medium">Duration:</span> 3 months
+                    <span className="font-medium">Duration:</span> {project.details?.timeline.duration || 'N/A'}
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    <span className="font-medium">Completed:</span> June 2023
+                    <span className="font-medium">Completed:</span> {project.details?.timeline.completed || 'N/A'}
                   </p>
                 </div>
               </div>
