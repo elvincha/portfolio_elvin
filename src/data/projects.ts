@@ -12,8 +12,8 @@ export type Project = {
 export const projectsList: Project[] = [
   {
     id: 1,
-    title: "AI-Powered Market Analysis",
-    description: "Developed a machine learning model to predict market trends using historical data and NLP on financial news.",
+    title: "Dog Breed Recognition",
+    description: "Developed a machine learning model to predict the breed of a dog with a kaggle dataset",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     tags: ["Python", "Machine Learning", "NLP", "Financial Analysis"],
     github: "#",
