@@ -74,7 +74,7 @@ const Header = () => {
             size="sm"
             asChild
           >
-            <a href="/resume.pdf" download="john_doe_resume.pdf" className="flex items-center gap-2">
+            <a href="/CV Elvin CHA eng.pdf" download className="flex items-center gap-2">
               <FileText className="h-4 w-4" />
               Resume
             </a>
@@ -113,7 +113,7 @@ const Header = () => {
               variant="default"
               asChild
             >
-              <a href="/resume.pdf" download="john_doe_resume.pdf" className="flex items-center justify-center gap-2">
+              <a href="/CV Elvin CHA eng.pdf" download className="flex items-center justify-center gap-2">
                 <FileText className="h-4 w-4" />
                 Resume
               </a>
