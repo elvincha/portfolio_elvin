@@ -9,6 +9,7 @@ export type Project = {
   details?: {
     overview: string;
     keyFeatures: string[];
+    challenges: string[];
     timeline: {
       duration: string;
       completed: string;
@@ -34,6 +35,12 @@ export const projectsList: Project[] = [
         "Mobile-responsive web interface",
         "API integration for batch processing"
       ],
+      challenges: [
+        "Handling imbalanced dataset with rare dog breeds",
+        "Optimizing model performance for mobile devices",
+        "Implementing real-time image processing",
+        "Dealing with varying image quality and lighting conditions"
+      ],
       timeline: {
         duration: "2 months",
         completed: "December 2023"
@@ -56,6 +63,12 @@ export const projectsList: Project[] = [
         "Interactive visualization dashboard",
         "HIPAA-compliant data handling",
         "Automated report generation"
+      ],
+      challenges: [
+        "Ensuring patient data privacy and HIPAA compliance",
+        "Handling missing and inconsistent medical records",
+        "Integrating multiple data sources and formats",
+        "Developing interpretable ML models for healthcare professionals"
       ],
       timeline: {
         duration: "3 months",

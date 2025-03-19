@@ -78,6 +78,15 @@ const ProjectDetail = () => {
                     ))}
                   </ul>
                 </div>
+                
+                <div>
+                  <h2 className="text-2xl font-medium mb-4">Challenges Faced</h2>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
+                    {project.details?.challenges.map((challenge, index) => (
+                      <li key={index}>{challenge}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
             

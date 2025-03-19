@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -6,11 +5,13 @@ import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { toast } = useToast();
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -50,15 +51,34 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setIsSubmitting(false);
-    }, 1500);
+    // Utilisez ces valeurs d'exemple pour le test
+    // Vous devrez créer un compte sur emailjs.com et remplacer ces valeurs
+    const serviceId = 'service_4hb24px'; // Remplacez avec votre Service ID
+    const templateId = 'template_96ccjuj'; // Remplacez avec votre Template ID
+    const publicKey = 'fDWOiycbKWYoi3M2z'; // Remplacez avec votre Public Key
+    
+    if (formRef.current) {
+      emailjs.sendForm(serviceId, templateId, formRef.current, publicKey)
+        .then((result) => {
+          console.log('Email envoyé avec succès!', result.text);
+          toast({
+            title: "Message envoyé!",
+            description: "Merci pour votre message. Je vous répondrai bientôt.",
+          });
+          setFormData({ name: '', email: '', subject: '', message: '' });
+        })
+        .catch((error) => {
+          console.error('Échec de l\'envoi du message:', error.text);
+          toast({
+            title: "Erreur",
+            description: "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.",
+            variant: "destructive",
+          });
+        })
+        .finally(() => {
+          setIsSubmitting(false);
+        });
+    }
   };
 
   const contactInfo = [
@@ -122,7 +142,7 @@ const Contact = () => {
         </div>
 
         <div className={`lg:col-span-2 ${isVisible ? 'animate-slide-in' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
-          <form onSubmit={handleSubmit} className="p-8 rounded-xl glassmorphism space-y-6">
+          <form ref={formRef} onSubmit={handleSubmit} className="p-8 rounded-xl glassmorphism space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label htmlFor="name" className="text-sm font-medium">
