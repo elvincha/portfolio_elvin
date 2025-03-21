@@ -10,6 +10,7 @@ export type Project = {
     overview: string;
     keyFeatures: string[];
     challenges: string[];
+    goal?: string;
     timeline: {
       duration: string;
       completed: string;
@@ -25,22 +26,22 @@ export const projectsList: Project[] = [
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     tags: ["Python", "TensorFlow", "Computer Vision", "Deep Learning"],
     github: "https://github.com/yourusername/dog-breed-recognition",
-    demo: "https://dog-breed-recognition-demo.com",
+    demo: "https://dog-breed-recognition-elvin-cha.streamlit.app/",
     details: {
-      overview: "This project showcases the implementation of a convolutional neural network (CNN) for dog breed classification. The model was trained on a dataset containing over 20,000 images of 120 different dog breeds, achieving an accuracy of 85% on the test set.",
+      overview: "This project showcases the implementation of a deep learning model for dog breed classification. A pre-trained ResNet-50 model was fine-tuned on a dataset containing over 9,000 images of 70 different dog breeds. The dataset is available on Kaggle: https://www.kaggle.com/datasets/gpiosenka/70-dog-breedsimage-data-set?select=train. The fine-tuned model achieved an accuracy of 85% on the test set.",
       keyFeatures: [
-        "Real-time breed prediction from uploaded images",
+        "Breed prediction from uploaded images",
         "Detailed breed information and characteristics",
         "Confidence scores for predictions",
-        "Mobile-responsive web interface",
-        "API integration for batch processing"
+        "Chat Bot integrated for questions about dog breeds",
       ],
       challenges: [
         "Handling imbalanced dataset with rare dog breeds",
-        "Optimizing model performance for mobile devices",
-        "Implementing real-time image processing",
+        "Dog breed which are similar in appearance but different in breed",
+        "LLM integration for the chat bot",
         "Dealing with varying image quality and lighting conditions"
       ],
+      goal: "This project aims to leverage my computer vision skils and also to increase successful dog adoption rates by providing prospective owners with comprehensive breed-specific advice. By educating potential adopters about both the advantages and challenges associated with particular breeds, we hope to create better matches between dogs and owners, ultimately reducing abandonment rates. Our system helps prepare new owners for the realities of dog ownership, ensuring they make informed decisions that lead to lifelong companionship rather than surrendered pets.",
       timeline: {
         duration: "2 months",
         completed: "December 2023"

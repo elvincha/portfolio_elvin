@@ -87,6 +87,11 @@ const ProjectDetail = () => {
                     ))}
                   </ul>
                 </div>
+
+                <div>
+                  <h2 className="text-2xl font-medium mb-4">Goal of the Project</h2>
+                  <p className="text-muted-foreground">{project.details?.goal}</p>
+                </div>
               </div>
             </div>
             
