@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { Github, Linkedin, Twitter, ExternalLink } from 'lucide-react';
 
@@ -6,9 +5,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/elvincha', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/elvin-cha-1b702719a/', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://twitter.com/elvin_cha', label: 'Twitter' },
   ];
 
   return (
@@ -31,8 +30,11 @@ const Footer = () => {
               <a
                 key={index}
                 href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={link.label}
                 className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/10 transition-colors"
+                //onClick={() => window.location.href = link.href}
               >
                 <link.icon className="h-5 w-5 text-foreground hover:text-primary transition-colors" />
               </a>

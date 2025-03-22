@@ -23,12 +23,12 @@ export const projectsList: Project[] = [
     id: 1,
     title: "Dog Breed Recognition",
     description: "An AI-powered application that accurately identifies dog breeds from images using deep learning models trained on a comprehensive dataset.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    image: "/dog_breed.jpg",
     tags: ["Python", "TensorFlow", "Computer Vision", "Deep Learning"],
-    github: "https://github.com/yourusername/dog-breed-recognition",
+    github: "https://github.com/elvincha/dog_breed_recognition",
     demo: "https://dog-breed-recognition-elvin-cha.streamlit.app/",
     details: {
-      overview: "This project showcases the implementation of a deep learning model for dog breed classification. A pre-trained ResNet-50 model was fine-tuned on a dataset containing over 9,000 images of 70 different dog breeds. The dataset is available on Kaggle: https://www.kaggle.com/datasets/gpiosenka/70-dog-breedsimage-data-set?select=train. The fine-tuned model achieved an accuracy of 85% on the test set.",
+      overview: "This project showcases the implementation of a deep learning model for dog breed classification. A pre-trained ResNet-50 model was fine-tuned on a dataset containing over 9,000 images of 70 different dog breeds. The dataset is available on Kaggle: https://www.kaggle.com/datasets/gpiosenka/70-dog-breedsimage-data-set?select=train. The fine-tuned model achieved an accuracy of 91% on the test set.",
       keyFeatures: [
         "Breed prediction from uploaded images",
         "Detailed breed information and characteristics",
@@ -43,8 +43,8 @@ export const projectsList: Project[] = [
       ],
       goal: "This project aims to leverage my computer vision skils and also to increase successful dog adoption rates by providing prospective owners with comprehensive breed-specific advice. By educating potential adopters about both the advantages and challenges associated with particular breeds, we hope to create better matches between dogs and owners, ultimately reducing abandonment rates. Our system helps prepare new owners for the realities of dog ownership, ensuring they make informed decisions that lead to lifelong companionship rather than surrendered pets.",
       timeline: {
-        duration: "2 months",
-        completed: "December 2023"
+        duration: "Unknown",
+        completed: "December 2024"
       }
     }
   },
