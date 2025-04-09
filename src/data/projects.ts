@@ -24,7 +24,7 @@ export const projectsList: Project[] = [
     title: "Dog Breed Recognition",
     description: "An AI-powered application that accurately identifies dog breeds from images using deep learning models trained on a comprehensive dataset.",
     image: "/dog_breed.jpg",
-    tags: ["Python", "TensorFlow", "Computer Vision", "Deep Learning"],
+    tags: ["Python", "TensorFlow", "Computer Vision", "Streamlit"],
     github: "https://github.com/elvincha/dog_breed_recognition",
     demo: "https://dog-breed-recognition-elvin-cha.streamlit.app/",
     details: {
@@ -44,39 +44,36 @@ export const projectsList: Project[] = [
       goal: "This project aims to leverage my computer vision skils and also to increase successful dog adoption rates by providing prospective owners with comprehensive breed-specific advice. By educating potential adopters about both the advantages and challenges associated with particular breeds, we hope to create better matches between dogs and owners, ultimately reducing abandonment rates. Our system helps prepare new owners for the realities of dog ownership, ensuring they make informed decisions that lead to lifelong companionship rather than surrendered pets.",
       timeline: {
         duration: "Unknown",
-        completed: "December 2024"
+        completed: "January 2025"
       }
     }
   },
   {
-    id: 2,
-    title: "Predictive Healthcare System",
-    description: "A comprehensive healthcare analytics platform that predicts patient health outcomes using machine learning algorithms and historical medical data.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    tags: ["Python", "Scikit-learn", "Healthcare", "Data Analysis"],
-    github: "https://github.com/yourusername/healthcare-predictor",
-    demo: "https://healthcare-predictor-demo.com",
-    details: {
-      overview: "This system integrates multiple machine learning models to predict various health outcomes, including disease progression, readmission rates, and treatment effectiveness. It processes structured and unstructured medical data to provide actionable insights for healthcare providers.",
-      keyFeatures: [
-        "Multi-model prediction system",
-        "Natural language processing of medical notes",
-        "Interactive visualization dashboard",
-        "HIPAA-compliant data handling",
-        "Automated report generation"
-      ],
-      challenges: [
-        "Ensuring patient data privacy and HIPAA compliance",
-        "Handling missing and inconsistent medical records",
-        "Integrating multiple data sources and formats",
-        "Developing interpretable ML models for healthcare professionals"
-      ],
-      timeline: {
-        duration: "3 months",
-        completed: "January 2024"
-      }
+    "id": 2,
+    "title": "Restaurant Recommendation",
+    "description": "A tool for collecting and analyzing restaurant information to help tourists decide where to eat during their trips.",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+    "tags": ["Python", "Web Scraping", "Data Analysis","streamlit"],
+    "github": "https://github.com/elvincha/web-scrapping",
+    "demo": "https://restaurant-recommendation-elvin-cha.streamlit.app/",
+    "details": {
+        "overview": "This project aims to create an interactive map that allows users to discover restaurants based on key criteria such as cuisine type, adresse, customer reviews. The data comes from restaurant APIs and web scraping techniques, including Playwright.",
+        "keyFeatures": [
+            "Cosine similarity-based recommendation system",
+            "Interactive map for visualization",
+            "Two recommendation options: Similarity or Location"
+        ],
+        "challenges": [
+            "Accessing and complying with data from platforms",
+            "Cleaning and managing unstructured data",
+            "Optimizing recommendation using cosine similarity"
+        ],
+        "timeline": {
+            "duration": "Unknown",
+            "completed": "December 2024"
+        }
     }
-  },
+}/*,
   {
     id: 3,
     title: "Smart Energy Consumption",
@@ -93,6 +90,12 @@ export const projectsList: Project[] = [
         "Smart device integration",
         "Cost optimization recommendations",
         "Environmental impact tracking"
+      ],
+      challenges: [
+        "Ensuring patient data privacy and HIPAA compliance",
+        "Handling missing and inconsistent medical records",
+        "Integrating multiple data sources and formats",
+        "Developing interpretable ML models for healthcare professionals"
       ],
       timeline: {
         duration: "4 months",
@@ -122,5 +125,5 @@ export const projectsList: Project[] = [
         completed: "March 2024"
       }
     }
-  }
+  }*/
 ];

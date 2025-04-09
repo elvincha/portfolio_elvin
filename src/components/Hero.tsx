@@ -45,7 +45,7 @@ const Hero = () => {
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <span className="text-primary font-semibold">AI</span>
                   </div>
-                  <h3 className="text-xl font-medium">Data Scientist & AI Specialist</h3>
+                  <h3 className="text-xl font-medium">Data Scientist & AI </h3>
                   <div className="flex flex-wrap gap-2">
                     {['Python', 'ML', 'Deep Learning', 'Data Analysis'].map(skill => (
                       <span key={skill} className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-secondary text-secondary-foreground">

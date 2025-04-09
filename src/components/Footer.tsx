@@ -17,11 +17,11 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <a href="#" className="text-xl font-display font-semibold tracking-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">
-                Elvin.CHA
+                Elvin CHA
               </span>
             </a>
             <p className="text-muted-foreground mt-2 text-sm">
-              Data Scientist & AI Specialist
+              Data Scientist & AI 
             </p>
           </div>
           
@@ -34,7 +34,6 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label={link.label}
                 className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/10 transition-colors"
-                //onClick={() => window.location.href = link.href}
               >
                 <link.icon className="h-5 w-5 text-foreground hover:text-primary transition-colors" />
               </a>

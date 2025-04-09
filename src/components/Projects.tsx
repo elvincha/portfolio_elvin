@@ -19,7 +19,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       </div>
       <CardHeader className="pt-6">
         <div className="flex flex-wrap gap-2 mb-2">
-          {project.tags.slice(0, 3).map(tag => (
+          {project.tags.slice(0, 4).map(tag => (
             <span key={tag} className="text-xs font-medium px-2 py-0.5 rounded-full bg-primary/10 text-primary">
               {tag}
             </span>

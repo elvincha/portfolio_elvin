@@ -11,7 +11,7 @@ type Skill = {
 };
 
 const skillsList: Skill[] = [
-  { name: 'Python', level: 90, category: 'technical' },
+  { name: 'Python', category: 'technical' },
   { name: 'R', level: 85, category: 'technical' },
   { name: 'SQL', level: 88, category: 'technical' },
   { name: 'JavaScript', level: 75, category: 'technical' },

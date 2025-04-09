@@ -50,7 +50,7 @@ const Header = () => {
         <div className="flex items-center">
           <a href="#" className="text-xl md:text-2xl font-display font-semibold tracking-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">
-              Elvin.CHA
+              Elvin CHA
             </span>
           </a>
         </div>
